@@ -43,7 +43,7 @@ public class DefaultController {
         Connection connection = factory.createConnection();
         try {
             try(Channel channel = connection.createChannel(false)) {
-                return channel.messageCountgit("default");
+                return channel.messageCount("default");
             }
         } finally {
             connection.close();
