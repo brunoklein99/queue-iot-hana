@@ -1,0 +1,9 @@
+---
+applications:
+- name: iot
+  memory: 800M
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git#v4.6
+  path: target/iot-0.0.1-SNAPSHOT.jar
+  service:
+  - rabbitmq-service
